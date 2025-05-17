@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft 365 - Microsoft</title>
+    <link rel="stylesheet" href="../css/styles1.css">
+
+    <style>
+        /* Add custom styles here to override defaults for Microsoft 365 */
+        /* Remove bullets and apply custom styles for the list */
+        .products ul {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0;
+            text-align: left; /* Align the list to the left for a cleaner look */
+            margin: 0;
+        }
+
+        /* Style for each list item */
+        .products ul li {
+            position: relative;
+            padding-left: 30px; /* Space for custom icon */
+            margin-bottom: 10px; /* Space between list items */
+            font-size: 16px; /* Customize the font size */
+            line-height: 1.5; /* Adjust line height for better spacing */
+        }
+
+        /* Custom checkmark or icon before each list item */
+        .products ul li::before {
+            content: '✔'; /* Add a checkmark before each item */
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: green; /* Choose the color of the checkmark */
+            font-size: 18px; /* Size of the checkmark */
+        }
+
+        /* Optional: Add hover effect for list items */
+        .products ul li:hover {
+            background-color: #f0f0f0; /* Light background on hover */
+            cursor: pointer; /* Change cursor to indicate interactivity */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="../index.html"><img src="../images/logo.png" alt="Microsoft Logo"></a>
+    </div>
+</header>
+
+<section class="products">
+    <h1>Microsoft 365</h1>
+    <img src="../images/p4.jpg" alt="Microsoft 365" style="width: 400px; margin: 20px;">
+    <p>Microsoft 365 is a monthly subscription service providing the latest Office apps, cloud storage, and powerful tools.</p>
+
+    <h2>Key Features</h2>
+    <ul>
+        <li><strong>Access to Latest Office Apps:</strong> Get the newest versions of Office apps like Word, Excel, PowerPoint, and Outlook. 📄📊</li>
+        <li><strong>Cloud Storage:</strong> 1TB of cloud storage with OneDrive to store your files and access them from anywhere. ☁️💾</li>
+        <li><strong>Collaborative Tools:</strong> Work together in real-time with colleagues using Microsoft Teams, Word, and Excel. 🤝📚</li>
+        <li><strong>Advanced Security:</strong> Protect your data with Microsoft’s advanced security tools, including encryption and multi-factor authentication. 🔒🛡️</li>
+        <li><strong>Automatic Updates:</strong> Stay up-to-date with the latest features and security updates automatically. 🔄⚡</li>
+        <li><strong>Support Across Devices:</strong> Use Microsoft 365 apps on your PC, Mac, tablet, and phone. 📱💻</li>
+    </ul>
+
+    <h2>Specifications</h2>
+    <ul>
+        <li><strong>Subscription Plan:</strong> Monthly or annual subscription options 💳🗓️</li>
+        <li><strong>Apps Included:</strong> Microsoft Word, Excel, PowerPoint, Outlook, OneNote, and more 📑📧</li>
+        <li><strong>Device Compatibility:</strong> PC, Mac, iOS, Android devices 📱💻</li>
+        <li><strong>Cloud Storage:</strong> 1TB per user with OneDrive ☁️💾</li>
+        <li><strong>Support:</strong> 24/7 support from Microsoft experts 📞👨‍💻</li>
+        <li><strong>Advanced Features:</strong> Teams, SharePoint, and Exchange integration 🛠️🤖</li>
+    </ul>
+
+    <a href="../index.html" class="btn">Back to Home</a>
+</section>
+
+</body>
+</html>

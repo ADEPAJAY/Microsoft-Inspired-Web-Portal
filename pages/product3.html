@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft Teams - Microsoft</title>
+    <link rel="stylesheet" href="../css/styles1.css">
+
+    <style>
+        /* Add custom styles here to override defaults for Microsoft Teams */
+        /* Remove bullets and apply custom styles for the list */
+        .products ul {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0;
+            text-align: left; /* Align the list to the left for a cleaner look */
+            margin: 0;
+        }
+
+        /* Style for each list item */
+        .products ul li {
+            position: relative;
+            padding-left: 30px; /* Space for custom icon */
+            margin-bottom: 10px; /* Space between list items */
+            font-size: 16px; /* Customize the font size */
+            line-height: 1.5; /* Adjust line height for better spacing */
+        }
+
+        /* Custom checkmark or icon before each list item */
+        .products ul li::before {
+            content: '✔'; /* Add a checkmark before each item */
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: green; /* Choose the color of the checkmark */
+            font-size: 18px; /* Size of the checkmark */
+        }
+
+        /* Optional: Add hover effect for list items */
+        .products ul li:hover {
+            background-color: #f0f0f0; /* Light background on hover */
+            cursor: pointer; /* Change cursor to indicate interactivity */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="../index.html"><img src="../images/logo.png" alt="Microsoft Logo"></a>
+    </div>
+</header>
+
+<section class="products">
+    <h1>Microsoft Teams</h1>
+    <img src="../images/paj1.avif" alt="Microsoft Teams" style="width: 400px; margin: 20px;">
+    <p>Collaborate seamlessly with your team online. Chat, call, meet, and collaborate all in one place.</p>
+
+    <h2>Key Features</h2>
+    <ul>
+        <li><strong>Seamless Communication:</strong> Chat, call, or video conference all in one place. 💬📞</li>
+        <li><strong>File Sharing:</strong> Share and collaborate on files in real-time. 📂🔄</li>
+        <li><strong>Meeting Scheduling:</strong> Schedule and join meetings with ease. 📅🎥</li>
+        <li><strong>Integration:</strong> Integrates with Microsoft 365 apps and services. 🖥️📈</li>
+        <li><strong>Security:</strong> Enterprise-grade security to protect your data. 🔒💼</li>
+        <li><strong>Customizability:</strong> Personalize your Teams experience with apps and channels. 🎨⚙️</li>
+    </ul>
+
+    <h2>Specifications</h2>
+    <ul>
+        <li><strong>Operating System:</strong> Available on Windows, macOS, iOS, and Android 💻📱</li>
+        <li><strong>Audio and Video:</strong> HD audio and video quality for meetings 🎶📹</li>
+        <li><strong>Storage:</strong> Cloud storage for all your shared files ☁️💾</li>
+        <li><strong>Collaboration:</strong> Real-time document collaboration with Microsoft Office apps 📑🤝</li>
+        <li><strong>Device Support:</strong> Supports desktop, mobile, and web applications 🖥️📱</li>
+        <li><strong>Security:</strong> End-to-end encryption for calls and meetings 🔐</li>
+    </ul>
+
+    <a href="../index.html" class="btn">Back to Home</a>
+</section>
+
+</body>
+</html>

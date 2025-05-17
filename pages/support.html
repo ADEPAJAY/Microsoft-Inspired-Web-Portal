@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Support - Adep Ajay</title>
+  <link rel="stylesheet" href="../css/styles1.css">
+  <style>
+    body {
+      overflow-x: hidden;
+      background: linear-gradient(135deg, #e0f7fa, #e3f2fd);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .support-header {
+      position: relative;
+      text-align: center;
+      color: white;
+      background: url('../images/xd.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .support-header::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      top: 0;
+      left: 0;
+    }
+    .support-header h1 {
+      position: relative;
+      font-size: 50px;
+      animation: slideDown 2s ease forwards;
+      z-index: 2;
+    }
+    @keyframes slideDown {
+      0% { transform: translateY(-100px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    .support-content {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease forwards;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.9); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+      border-radius: 50%;
+      overflow: hidden;
+      animation: rotate360 15s linear infinite;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @keyframes rotate360 {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .section {
+      margin-top: 30px;
+      text-align: left;
+    }
+    .section h2 {
+      font-size: 28px;
+      color: #0078D7;
+      margin-bottom: 10px;
+    }
+    .section p, .section ul {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 200px;
+      perspective: 1000px;
+      margin: 20px auto;
+    }
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+    }
+    .flip-card-front {
+      background-color: #2196F3;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .flip-card-back {
+      background-color: #00bcd4;
+      color: white;
+      transform: rotateY(180deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .contact-form {
+      margin: 50px auto;
+      max-width: 600px;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #0078D7;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    .contact-form button {
+      margin-top: 15px;
+    }
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .back-btn {
+      margin-top: 30px;
+      display: block;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<canvas id="background-canvas"></canvas>
+
+<header>
+  <div class="logo">
+    <a href="../index.html"><img src="../images/logo.png" alt="Microsoft Logo"></a>
+  </div>
+</header>
+
+<section class="support-header">
+  <h1>About Adep Ajay</h1>
+</section>
+
+<section class="support-content">
+
+  <div class="profile-image">
+    <img src="../images/ajaj.jpg" alt="Adep Ajay">
+  </div>
+
+  <div class="section">
+    <h2>About Me</h2>
+    <p>An ambitious developer and technology enthusiast, passionate about engaging with advanced technologies and new trends. Skilled in social media, marketing, and passionate about AI and ML. Currently pursuing MCA at CBIT (Chaitanya Bharathi Institute of Technology), Hyderabad.</p>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, Java, JavaScript, HTML5, MySQL, C, C++</li>
+      <li>Cyber Security, Network Security</li>
+      <li>Graphic Design, Canva, Marketing</li>
+      <li>Public Speaking, Leadership, Social Media Handling</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Work Experience</h2>
+    <p><strong>Marketing Head</strong> @ PlanetOne (2024)</p>
+    <p><strong>Digital Marketing & Graphic Design Lead</strong> @ PlanetOne (2024)</p>
+    <p><strong>Digital Marketing Intern</strong> @ PlanetOne (2022-2024)</p>
+  </div>
+
+  <div class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Earth 4090 Game</strong> — Created an award-winning game using Scratch.io</li>
+      <li><strong>B Student Sphere</strong> — Built a student community web app using MongoDB, React, JS</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Certificate of Publication (AR and VR Technologies)</li>
+      <li>2nd Runner Up — Charles Babbage Day (2D Game Design)</li>
+      <li>FusionTech Club — 1st Student Coordinator</li>
+      <li>Resource Person — Canva Masterclass</li>
+    </ul>
+  </div>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h2>Languages</h2>
+      </div>
+      <div class="flip-card-back">
+        <p>Telugu (Native), Hindi (Conversational), English (Professional)</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="contact-form">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <a href="../index.html" class="btn back-btn">Back to Home</a>
+
+</section>
+
+<script>
+// Background Canvas Animation
+const canvas = document.getElementById('background-canvas');
+const ctx = canvas.getContext('2d');
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+let particles = [];
+for (let i = 0; i < 100; i++) {
+    particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        dx: (Math.random() - 0.5) * 2,
+        dy: (Math.random() - 0.5) * 2,
+        radius: Math.random() * 2 + 1
+    });
+}
+
+function drawParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "rgba(0, 150, 255, 0.7)";
+    particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fill();
+        p.x += p.dx;
+        p.y += p.dy;
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+    });
+    requestAnimationFrame(drawParticles);
+}
+drawParticles();
+
+// Contact Form Submission
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert("Adep Ajay will contact you soon!");
+    contactForm.reset();
+});
+</script>
+
+</body>
+</html>

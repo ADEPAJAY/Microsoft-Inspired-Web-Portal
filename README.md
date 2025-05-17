@@ -25,11 +25,24 @@ A beautifully designed Microsoft-themed web portal built entirely with HTML, CSS
 - 🔹 **CSS3** (Custom animations, transitions, parallax, hover effects)  
 - 🔹 **Vanilla JavaScript** (No frameworks!)
 
-  📝 License
-This project is for educational and portfolio purposes.
-Please don’t clone it as-is for commercial use without permission.
 
 ---
+
+## 📝 License
+
+This project is open for cloning and modification for educational and personal use.  
+You are welcome to fork or clone this repository. However, please do **not** use it for commercial purposes without explicit permission.
+
+---
+
+## 📥 How to Clone This Repository
+
+1. Open your terminal or command prompt.  
+2. Navigate to the folder where you want to clone the project.  
+3. Run the following command:
+
+```bash
+git clone https://github.com/yourusername/your-repo-name.git
 
 ## 📁 Project Structure
 
